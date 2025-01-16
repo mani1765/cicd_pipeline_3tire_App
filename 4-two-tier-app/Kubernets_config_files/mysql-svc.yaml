@@ -11,5 +11,5 @@ spec:
     protocol: TCP
     targetPort: 3306      
   selector:
-    app: mysql-pod
+    run: mysql-pod
   type: ClusterIP
