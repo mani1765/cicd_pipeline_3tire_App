@@ -14,10 +14,10 @@ spec:
       labels:
         app: node-app
     spec:
-      imagePullSecrets:
-      - name: registery-credenial            
+      #imagePullSecrets:
+      #- name: registery-credenial            
       containers:
-      - image: registry.gitlab.com/d6245/app-k8s/app-login:v1 
+      - image: mani1765/nodeapp:v1 
         name: node-app
         envFrom:
         - configMapRef:
